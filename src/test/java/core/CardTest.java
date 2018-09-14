@@ -3,25 +3,20 @@ package core;
 import junit.framework.TestCase;
 
 public class CardTest extends TestCase{
+		Card aCard =new Card("ace",1);
+		
 	public void testgetRankName() {
-		Card aCard =new Card();
-		assertEquals("A", aCard.getRankName());
+		assertTrue(aCard.getRankName().equals("A"));
 	}
 	public void testgetValue() {
-		Card aCard =new Card();
-		assertEquals(1, aCard.getValue());
+		assertEquals(11, aCard.getValue());
 	}
 	public void testgetSuit() {
-		Card aCard =new Card();
-		assertEquals("Ace", aCard.getSuit());
+		assertTrue(aCard.getRankName().equals("A"));
+
 	}
 	public void testgetRank() {
-		Card aCard =new Card();
 		assertEquals(1, aCard.getRank());
 	}
-	public void testshowCard() {
-		Card aCard =new Card();
-		assertEquals("A_1", aCard.showCard());
-	}	
 	
 }
