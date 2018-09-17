@@ -2,7 +2,7 @@ package core;
 
 public class Card {
 
-
+	public Card next;
 	private String suit;
 	private int rank;
 		
@@ -42,6 +42,10 @@ public class Card {
     public int getRank(){
     	return rank;
     } 
+    public String toString()
+    {
+        return getRankName() + "_" + suit;
+    }
 }
 
 

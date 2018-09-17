@@ -10,11 +10,8 @@ public class DeckTest extends TestCase{
 	Card temp;
 	public void testPushPop() {
 		aDeck.push(aCard);	
-		assertEquals(false, aDeck.isEmpty());
 		temp=aDeck.pop();
-		assertEquals(aCard.getRank(), temp.getRank());
-		assertEquals(aCard.getSuit(), temp.getSuit());
-		
+		assertEquals(aCard.toString(), temp.toString());		
 	}
 	public void testIsEmpty() {
 		assertEquals(true, aDeck.isEmpty());
@@ -25,8 +22,7 @@ public class DeckTest extends TestCase{
 		aDeck.push(aCard);
 		aDeck.shuffleDeck();
 		temp=aDeck.pop();
-		assertNotEquals(aCard.getRank(), temp.getRank());
-		assertNotEquals(aCard.getSuit(), temp.getSuit());
+		assertNotEquals(aCard.toString(), temp.toString());
 	}
 	public void testCreateDeck() {
 		aDeck.createDeck();

@@ -42,7 +42,7 @@ public class Deck {
 
     public void createDeck()
     {
-        String[] suit = {"\u2663", "\u2666", "\u2665", "\u2660"};
+        String[] suit = {"DIAMIOND", "SPADE", "CLUB", "HEART"};
         int[] rank = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
 
         for (int i = 0; i < rank.length; i ++)
