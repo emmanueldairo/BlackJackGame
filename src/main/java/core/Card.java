@@ -1,7 +1,8 @@
 package core;
 
-public class Card {
 
+
+public class Card {
 	public Card next;
 	private String suit;
 	private int rank;
@@ -42,6 +43,12 @@ public class Card {
     public int getRank(){
     	return rank;
     } 
+ 
+    public void showCard()
+    {
+        System.out.print(" " + getRankName() + "_" + suit);
+    } 
+    
     public String toString()
     {
         return getRankName() + "_" + suit;

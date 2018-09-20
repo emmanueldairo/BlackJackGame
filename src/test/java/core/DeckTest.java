@@ -6,7 +6,7 @@ import junit.framework.TestCase;
 
 public class DeckTest extends TestCase{
 	Card aCard =new Card("ACE",1);
-	Deck aDeck =new Deck(52);
+	Deck aDeck =new Deck();
 	Card temp;
 	public void testPushPop() {
 		aDeck.push(aCard);	
@@ -26,8 +26,9 @@ public class DeckTest extends TestCase{
 	}
 	public void testCreateDeck() {
 		aDeck.createDeck();
+		assertEquals(52, aDeck.getSize());
 		assertNotNull(aDeck.pop());
 	}
 
-
+ 
 }

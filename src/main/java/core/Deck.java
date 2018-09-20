@@ -1,21 +1,24 @@
 package core;
 
 public class Deck {
-	private int maxSize;
+	private int maxSize=52;
     private Card[] stackArray;
     private int top;
 
-    public Deck(int s)
+    public Deck()
     {
-        maxSize = s;
+        //maxSize = s;
         stackArray = new Card[maxSize];
         top = -1;
     } 
 
     public void push(Card card)
-    {
+    {    		
         stackArray[++top] = new Card(card);
     } 
+    public int getSize() {
+		return maxSize;
+	}
 
     public Card pop()
     {

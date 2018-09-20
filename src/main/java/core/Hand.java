@@ -58,10 +58,11 @@ public class Hand {
 	        Card temp = first;
 	        return temp != null && (temp.getValue() == temp.next.getValue());
 	    } 
+	    
 
 	    public void peek()
 	    {
-	        first.toString();
+	        first.showCard();
 	    } 
 
 	    public int peekValue()

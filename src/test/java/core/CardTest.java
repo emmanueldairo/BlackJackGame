@@ -1,9 +1,11 @@
 package core;
 
+
 import junit.framework.TestCase;
 
 public class CardTest extends TestCase{
 		Card aCard =new Card("DIAMOND",1);
+	
 		
 	public void testgetRankName() {
 		assertTrue(aCard.getRankName().equals("A"));
