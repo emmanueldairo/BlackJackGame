@@ -1,4 +1,5 @@
 package core;
+//citation: Stack overflow how is my black jack game design
 
 public class Hand {
 	    private Card first;

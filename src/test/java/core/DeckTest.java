@@ -3,6 +3,7 @@ package core;
 import static org.junit.Assert.assertNotEquals;
 
 import junit.framework.TestCase;
+//citation: Stack overflow how is my black jack game design
 
 public class DeckTest extends TestCase{
 	Card aCard =new Card("ACE",1);
@@ -15,6 +16,9 @@ public class DeckTest extends TestCase{
 	}
 	public void testIsEmpty() {
 		assertEquals(true, aDeck.isEmpty());
+	}
+	public void testGetSize() {
+		assertEquals(52, aDeck.getSize());
 	}
 	public void testShuffleDeck() {
 		aDeck.createDeck();

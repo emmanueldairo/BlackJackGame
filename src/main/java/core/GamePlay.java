@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
+//citation: Stack overflow how is my black jack game design
 
 public class GamePlay {
 	 public static  int BLACKJACK = 21;

@@ -1,7 +1,7 @@
 package core;
 
 
-
+//citation: Stack overflow how is my black jack game design
 public class Card {
 	public Card next;
 	private String suit;
